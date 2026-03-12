@@ -1,0 +1,13 @@
+﻿
+@model (P05._03_Tuple_Nesne_Post_Yakalma_Islemleri.Models.Prodcut Urun, P05._03_Tuple_Nesne_Post_Yakalma_Islemleri.Models.User)
+@{
+    ViewData["Title"] = "CreateProduct";
+}
+
+<form asp-action="CreateProduct" method="post">
+    <input type="text" asp-for="Urun.Name" /> <br />
+    <input type="text" asp-for="Item2.Name" /> <br />
+    <button type="submit">Onayla</button>
+</form>
+
+ 

@@ -1,0 +1,14 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<ul>
+	@foreach (var product in (List<P02_Viewler_View_Veri_Tasima.Models.Product>)ViewData["product"]) // Cast ediliyor.
+	{
+		<li>@product.ID - @product.ProductName - @product.Quantity</li>
+		// Ürün bilgilerini listeleme
+	}
+
+</ul>

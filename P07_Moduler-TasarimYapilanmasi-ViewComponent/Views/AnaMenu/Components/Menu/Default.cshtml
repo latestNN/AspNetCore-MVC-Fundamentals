@@ -1,0 +1,10 @@
+﻿@model List<string>
+<aside>
+    <h3>Menü</h3>
+    <ul>
+        @foreach(var item in Model)
+        {
+            <li><a href="#">@item</a></li>
+        }
+    </ul>
+</aside>

@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Modüler MVC Sayfası</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f6f9;
+        }
+
+        header {
+            background-color: #1e293b;
+            color: white;
+            padding: 15px 25px;
+            font-size: 20px;
+        }
+
+        nav {
+            background-color: #334155;
+            padding: 10px 25px;
+        }
+
+        nav a {
+            color: white;
+            margin-right: 15px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .container {
+            display: flex;
+            min-height: 80vh;
+        }
+
+        aside {
+            width: 220px;
+            background-color: #0f172a;
+            color: white;
+            padding: 20px;
+        }
+
+        aside h3 {
+            margin-top: 0;
+        }
+
+        aside ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        aside li {
+            margin-bottom: 10px;
+        }
+
+        aside a {
+            color: #cbd5e1;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        main {
+            flex: 1;
+            padding: 25px;
+            background-color: white;
+        }
+
+        .card {
+            background-color: #e2e8f0;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 6px;
+        }
+
+        footer {
+            background-color: #1e293b;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        🚀 Benim MVC Sitem
+    </header>
+
+    <!-- NAVBAR -->
+    <nav>
+        <a href="#">Ana Sayfa</a>
+        <a href="#">Ürünler</a>
+        <a href="#">Hakkımızda</a>
+        <a href="#">İletişim</a>
+    </nav>
+
+    @RenderBody()
+
+    <!-- FOOTER -->
+    <footer>
+        © 2026 Tüm Hakları Saklıdır | MVC Modüler Yapı Örneği
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+﻿@model P05._04_Server_Validationlari_Cilent_Tabanlı_Uygulama.Models.Product
+
+<script src="~/jquery/jquery.min.js"></script>
+<a href="~/jquery/jquery.min.map">~/jquery/jquery.min.map</a>
+<script src="~/jquery-validate/jquery.validate.min.js"></script>
+<script src="~/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<div asp-validation-summary="All">
+    @* Sayfaya gelen tüm Validation hatalarını burada listeler. *@
+
+</div>
+
+<form asp-action="CreateProduct" asp-controller="Product" method="post">
+    <input type="text" asp-for="Name" name="name" value="" />
+    <span asp-validation-for="Name"></span> <br />
+
+
+    <input type="number" asp-for="Quantity" name="name" value="" />
+    <span asp-validation-for="Quantity"></span> <br />
+
+
+
+    <input type="email" asp-for="Email" name="name" value="" />
+    <span asp-validation-for="Email"></span> <br />
+
+
+    <button type="submit">Onayla</button>
+</form>

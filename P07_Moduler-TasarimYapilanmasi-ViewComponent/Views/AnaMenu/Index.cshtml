@@ -1,0 +1,24 @@
+﻿@{
+    Layout = "~/Views/Shared/_ModulerTasarimLayout.cshtml";
+}
+
+<div class="container">
+
+    <!-- SIDEBAR -->
+    @await Component.InvokeAsync("Menu")
+
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <h2>Hoş Geldin 👋</h2>
+        <p>Bu alan dinamik içeriklerin geleceği yer. MVC’de View buraya render edilir.</p>
+
+        <!-- CARDS -->
+        @await Component.InvokeAsync("Stats", new { veri = 5 }) @* ViewComponent'a veri isimli ananom bir tür gönderir. *@
+
+        <div class="card">
+            <h4>Duyuru</h4>
+            <p>Sistem bakımı pazar günü yapılacaktır.</p>
+        </div>
+    </main>
+</div>

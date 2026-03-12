@@ -1,0 +1,18 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+
+<form asp-action="VeriAlParametre" asp-controller="Product" method="post">
+    <input type="type" name="txtValue1" /> <br />
+    <input type="type" name="txtValue2" /> <br />
+    <input type="type" name="txtValue3" /> <br />
+    <button type="submit"></button>
+</form>
+
+
+<a asp-action="Index" asp-controller="Home" Asp-route-a="ahmet" asp-route-b="mehmer" asp-route-id="123">Content</a>
+
+"{controller=Home}/{action=Index}/{a}/{b}/{c}/{id?}" 

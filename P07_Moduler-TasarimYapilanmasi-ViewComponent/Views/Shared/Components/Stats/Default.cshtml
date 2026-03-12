@@ -1,0 +1,13 @@
+﻿@model List<P07_Moduler_TasarimYapilanmasi_ViewComponent.Models.Stats>
+
+<span>Ana View'den Gelen Veri: @ViewBag.Veri</span>
+
+@foreach(var stat in Model)
+{
+    <div class="card">
+        <h4>İstatistik @stat.Id</h4>
+        <p>Bugünkü ziyaretçi sayısı: @stat.ActiveUser</p>
+    </div>
+}
+
+

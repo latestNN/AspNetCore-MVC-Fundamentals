@@ -1,0 +1,112 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+
+@* Yorum satırı *@
+
+
+@*Değişken Tanımlama*@
+@{
+	string mesaj = "Merhaba Razor View!";
+}
+
+
+@*Değişken okuma *@
+@{
+	int a = 5;
+	Console.WriteLine(a);
+} 
+
+
+
+
+@*Parçalı Scope Yapısı *@
+@{
+	Console.WriteLine(a); // Üst scope'da tanımlanan değişkene erişim sağlanabilir.
+} 
+
+
+@*Razor içerisinde HTML kullanımı*@
+@{
+	<div>Merhaba</div>
+}
+
+
+@*Razor içerisinde <text> Etiketi*@
+@{
+	if(true)
+	{
+		<text>Evet</text>
+	}
+	else
+	{
+		<text>Hayir</text>
+	}
+}
+
+
+
+@*Razor ile tek satırlık işlemler*@
+@{
+	<H3>@(5 + 3)</H3>
+	<H3>@(33 % 5 == 3 ? "Evet" : "Hayir")</H3>
+}
+
+
+
+
+
+@*Kendi Konsepti olan yapılar*@
+@{
+	int sayi = 5;
+	if (sayi == 5)
+	{
+		<h3>evet</h3>
+	}
+	for (int i = 0; i < 5; i++)
+	{
+		<p>i'nin değeri: @i</p>
+	}
+	try
+	{
+		// Kodlar
+	}
+	catch (Exception ex)
+	{
+		// Hata yakalama kodları
+
+	}
+	try
+	{
+		// Kodlar
+	}
+	catch (Exception ex)
+	{
+		// Hata yakalama kodları
+
+	}
+}
+@if (sayi == 5)
+{
+	<h3>evet</h3>
+}
+@for (int i = 0; i < 5; i++)
+{
+	<p>i'nin değeri: @i</p>
+}
+@try
+{
+	// Kodlar
+}
+catch (Exception ex)
+{
+	// Hata yakalama kodları
+
+}
+
+
+
+

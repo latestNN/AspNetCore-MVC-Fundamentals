@@ -1,0 +1,15 @@
+﻿
+@{
+	Layout = null; 
+}
+
+
+
+<ul>
+	@foreach (var product in ViewBag.products as List<P02_Viewler_View_Veri_Tasima.Models.Product>) // Model üzerinden döngü
+	{
+		<li>@product.ID - @product.ProductName - @product.Quantity</li>
+		// Ürün bilgilerini listeleme
+	}
+	
+</ul>

@@ -1,0 +1,20 @@
+﻿@model ModelBinding.Models.Product
+
+Tag Helper
+<form asp-action="CreateProduct" method="post">
+    <input asp-for="Name" type="text" placeholder="Product Name" />
+    <br />
+    <input asp-for="Quantity" type="number" placeholder="Quantity" />
+    <br />
+    <button type="submit">Urun Ekle</button>
+</form>
+
+
+Html Helper
+<form asp-action="CreateProduct" method="post">
+    @Html.TextBoxFor(x => x.Name)
+    <br />
+    @Html.TextBoxFor(x => x.Quantity)
+    <br />
+    <button type="submit">Urun Ekle</button>
+</form>
