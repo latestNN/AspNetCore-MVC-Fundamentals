@@ -29,7 +29,3 @@ Bu repository, ASP.NET Core MVC öğrenim sürecimde adım adım aldığım ders
 | **Diğer Yapılandırmalar** <br> <sub>- appsettings.json Dosyası Kullanımı<br>- Secret Manager Tools Kullanımı<br>- Environment (Development, Staging, Production) Yönetimi</sub> | [📂 P13](P13_appsettings.json-Dosyasi)<br>[📂 P14](P14_Secret-Manager-Tools)<br>[📂 P15](P15_Environment) | [📄 PDF Oku](<Notes/Environment.pdf>) |
 
 
-
-1. Repoyu bilgisayarınıza klonlayın:
-   ```bash
-   git clone [https://github.com/KULLANICI_ADIN/REPO_ADIN.git](https://github.com/KULLANICI_ADIN/REPO_ADIN.git)
